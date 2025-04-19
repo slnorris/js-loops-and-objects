@@ -48,27 +48,59 @@
 
 // Problem 7: Array of Ojects
 
+let books = [];
 
-let books = [
-  {
+for (let i = 0; i < 1; i++) {
+  newBook1 = {
     title: "Pet Sematary",
     author: "Stephen King",
-    pages: 416
-  },
-  {
+    pageCount: 416,
+    isFavorite: true
+  };
+  newBook2 = {
     title: "The Last Wish",
     author: "Andrzej Sapkowski",
-    pages: 344
-  },
-  {
+    pageCount: 360,
+  };
+  newBook3 = {
     title: "Angela's Ashes",
     author: "Frank McCourt",
-    pages: 368
+    pageCount: 368,
+  };
+  books.push(newBook1, newBook2, newBook3);
+}
+
+console.log(
+  newBook1.title +
+    " by " +
+    newBook1.author +
+    " - " +
+    newBook1.pageCount +
+    " pages."
+);
+console.log(
+  newBook2.title +
+    " by " +
+    newBook2.author +
+    " - " +
+    newBook2.pageCount +
+    " pages."
+);
+console.log(
+  newBook3.title +
+    " by " +
+    newBook3.author +
+    " - " +
+    newBook3.pageCount +
+    " pages."
+);
+
+
+
+// Problem 8: Favorite Book Finder
+
+for (let i = 0; i < books.length; i++) {
+  if (books[i].isFavorite === true) {
+    console.log(books[i]);
   }
-]
-
-console.log(books)
-
-
-
-
+}
