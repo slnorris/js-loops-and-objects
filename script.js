@@ -1,18 +1,14 @@
 // PART 1: FOR LOOPS
 // Problem 1: Count to 10
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
 }
 
 // Problem 2: Even Numbers
-let numTwenty = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-];
 
-for (let i = 1; i < numTwenty.length; i += 2) {
-  console.log(numTwenty[i]);
+for (let i = 2; i <= 20; i += 2) {
+  console.log(i);
 }
 
 // Problem 3: Loop through an Array
@@ -39,13 +35,7 @@ let person = {
 };
 
 console.log(
-  "My name is " +
-    person.firstName +
-    ". I am " +
-    person.age +
-    " years old and my favorite color is " +
-    person.favoriteColor +
-    "."
+  `My name is ${person.firstName}. I am ${person.age} and my favorite color is ${person.favoriteColor}.`
 );
 
 // Problem 6: Modify an Object (add hobby to person object using dot notation)
@@ -53,15 +43,7 @@ console.log(
 person.hobby = "drawing";
 
 console.log(
-  "My name is " +
-    person.firstName +
-    ". I am " +
-    person.age +
-    " years old, my favorite color is " +
-    person.favoriteColor +
-    " and I love " +
-    person.hobby +
-    "."
+  `My name is ${person.firstName}. I am ${person.age} years old, my favorite color is ${person.favoriteColor}, and I love ${person.hobby}.`
 );
 
 // Problem 7: Array of Ojects
@@ -96,7 +78,7 @@ books[0].isFavorite = true;
 for (let i = 0; i < books.length; i++) {
   let book = books[i];
   if (book.isFavorite) {
-    console.log(`${book.title} is my favorite.`);
+    console.log(`${book.title} is my favorite book.`);
   }
 }
 
@@ -104,7 +86,7 @@ for (let i = 0; i < books.length; i++) {
 
 person = [(firstName = "Jax"), (age = 11), (hobby = "gaming")];
 
-function describePerson(person) {
+function describePerson() {
   for (let i = 0; i < 1; i++) {
     console.log(firstName + " is " + age + " and loves " + hobby + ".");
   }
